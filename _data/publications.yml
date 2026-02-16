@@ -1,8 +1,19 @@
+- title: "Physics-Informed Neural Networks for Proprioception of Soft Robots via Wireless Local Strain Sensing"
+  authors: "Liu, L., Gong, J., Dou, Y., Trivedi, V. M., Chen, L.Y., Li, Y., ... & Zhao, H."
+  venue: "In preparation" 
+  year: 2026
+  image: "/assets/pubs//PINN.png"
+  summary: "We proposed a wireless and real-time sensorization method for proprioception of soft robots, which embeds the physical constraints 
+    into the data-driven methods to achieve physics-informed, accurate, and real-time reconstructions of quasi-static states of soft robots. 
+    The LM soft strain sensors with wireless fPCB boards enable the on-body intelligence of soft robots. With the data stream from those sensors, 
+    trained PINNs can reconstruct the deformed shapes of the target soft robots in a real-time manner (inference time < 0.3 ms) with an MNDE < 6% 
+    in experimental demonstrations, including multimodal deformation, local motion, and random external interactions. "
+
 - title: "Model-Based 3D Shape Reconstruction of Soft Robots via Distributed Strain Sensing"
   url: "https://www.liebertpub.com/doi/abs/10.1089/soro.2024.0158"
   authors: "Liu, L., Huang, X., Zhang, X., Zhang, B., Xu, H., Trivedi, V. M., ... & Zhao, H."
   venue: "Soft Robotics,12(6)"
-  year: 2026
+  year: 2025
   image: "/assets/pubs/Model-based Recosntruction.png"
   summary: "We present a shape reconstruction scheme enabled by sparsely distributed soft strain sensors 
             on the surfaces of soft robots, combined with a model-based reconstruction framework. Our approach utilizes miniaturized stretchable capacitive strain sensors 
@@ -16,18 +27,18 @@
   venue: "Science Advances, 10(18)"
   year: 2024
   image: "/assets/pubs/MN_1.png"
-  summary: "we present the design, fabrication, and applications of stretchable microneedle electrode arrays (SMNEAs) for sensing local intramuscular electromyography signals ex vivo. 
+  summary: "We present the design, fabrication, and applications of stretchable microneedle electrode arrays (SMNEAs) for sensing local intramuscular electromyography signals ex vivo. 
             We use a unique hybrid fabrication scheme based on laser micromachining, microfabrication, and transfer printing to enable scalable fabrication of individually addressable 
             SMNEA with high device stretchability (60 to 90%). The electrode geometries and recording regions, impedance, array layout, and length distribution are highly customizable. 
             We demonstrate the use of SMNEAs as bioelectronic interfaces in recording intramuscular electromyography from various muscle groups in the buccal mass of Aplysia."
 
 - title: "High-stretchability and low-hysteresis strain sensors using origami-inspired 3D mesostructures"
   url: "https://www.science.org/doi/full/10.1126/sciadv.adh9799"
-  authors: "	Huang, X., Liu, L., Lin, Y. H., Feng, R., Shen, Y., Chang, Y., & Zhao, H."
+  authors: "Huang, X., Liu, L., Lin, Y. H., Feng, R., Shen, Y., Chang, Y., & Zhao, H."
   venue: "Science Advances, 9(34)"
   year: 2023
   image: "/assets/pubs/Origami.png"
-  summary: "we present the design, fabrication, and applications of stretchable microneedle electrode arrays (SMNEAs) for sensing local intramuscular electromyography signals ex vivo. 
+  summary: "We present the design, fabrication, and applications of stretchable microneedle electrode arrays (SMNEAs) for sensing local intramuscular electromyography signals ex vivo. 
             We use a unique hybrid fabrication scheme based on laser micromachining, microfabrication, and transfer printing to enable scalable fabrication of individually addressable 
             SMNEA with high device stretchability (60 to 90%). The electrode geometries and recording regions, impedance, array layout, and length distribution are highly customizable. 
             We demonstrate the use of SMNEAs as bioelectronic interfaces in recording intramuscular electromyography from various muscle groups in the buccal mass of Aplysia."
@@ -41,3 +52,11 @@
   summary: "We employed topology optimization with the SIMP method and MMA optimizer for the design of auxetic metamaterials. The negative Poisson’s ratio was verified by numerical simulation.
             Bandgap study was also conducted on the optimized layout and it showed that the optimization also achieved auxetic metamaterials with two narrow locally resonant bandgaps in addition 
             to broadening and lowering the bandgap of the initial configuration."
+
+
+- title: "A review: Elastic metamaterials and inverse design methods for shock and vibration mitigation"
+  url: "https://doi.org/10.1142/s1758825121501027"
+  authors: "Liu, L., & Lee, H. P"
+  venue: "International Journal of Applied Mechanics, 13(9)"
+  year: 2021
+  image: "/assets/pubs/Review.png"
