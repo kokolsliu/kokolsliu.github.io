@@ -1,0 +1,38 @@
+---
+layout: default
+title: Photography
+permalink: /photography/
+---
+
+<h1>Photography</h1>
+
+<div id="masonry" class="masonry">
+  {% assign imgs = site.static_files | where_exp: "f", "f.path contains '/assets/photos/'" %}
+  {% for img in imgs %}
+    {% assign ext = img.extname | downcase %}
+    {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.webp' or ext == '.gif' %}
+      <a class="brick" href="{{ img.path | relative_url }}" target="_blank" rel="noopener">
+        <img loading="lazy" src="{{ img.path | relative_url }}" alt="">
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+  // Shuffle items to get a random dense layout each load (client-side).
+  (function () {
+    const container = document.getElementById("masonry");
+    if (!container) return;
+
+    const items = Array.from(container.children);
+
+    // Fisher–Yates shuffle
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+
+    // Re-append shuffled items
+    items.forEach(el => container.appendChild(el));
+  })();
+</script>
