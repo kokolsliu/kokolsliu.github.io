@@ -290,3 +290,13 @@ a:hover { text-decoration: underline; }
 @media (max-width: 520px){
   .masonry{ column-count: 1; }
 }
+
+
+.cn-name{
+  font-family: "Noto Serif SC", serif;
+  font-size: 0.9em;      /* 中文变小 */
+  font-weight: 600;      /* 不要太粗 */
+  color: #000;           /* 灰色 */
+  margin-left: 4px;
+}
+

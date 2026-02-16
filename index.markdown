@@ -7,9 +7,11 @@ title: Home
 
   <div class="hero-text">
 
-    <h1>Liangshu (koko) Liu</h1>
+    <h1>
+      Liangshu (koko) Liu · 
+      <span class="cn-name">刘梁枢</span>
+    </h1>
     <p class="subtitle">Ph.D. researcher · Soft robotics · Computational Mechanics</p>
-
     <div class="statement">
         I am a fourth-year Ph.D. student in Mechanical Engineering at USC. My research focuses on bridging physics-based modeling and data-driven perception for soft robotic systems.
         I also work in numerical simulation of complex and multiphycis systems, as well as structural optimization of compliant mechanisms. 
