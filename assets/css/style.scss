@@ -187,42 +187,28 @@ a:hover { text-decoration: underline; }
   .pub{ grid-template-columns: 1fr; }
 }
 
-/* Contact page */
+/* Minimal icon-only contact */
 
 .contact-icons{
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 24px;
+  gap: 22px;
+  margin-top: 32px;
 }
 
 .contact-icon{
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  text-decoration: none;
-  color: var(--fg);
-}
-
-.contact-icon:hover{
-  border-color: #d0d0d0;
-  text-decoration: none;
-}
-
-.contact-icon .icon{
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 14px;
+  color: var(--fg);
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-.contact-icon .label{
-  font-size: 14px;
-  color: var(--muted);
+.contact-icon:hover{
+  transform: translateY(-2px);
+  border-color: #cfcfcf;
 }
