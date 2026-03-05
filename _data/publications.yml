@@ -3,11 +3,7 @@
   venue: "In preparation" 
   year: 2026
   image: "/assets/pubs//PINN.png"
-  summary: "We proposed a wireless and real-time sensorization method for proprioception of soft robots, which embeds the physical constraints 
-    into the data-driven methods to achieve physics-informed, accurate, and real-time reconstructions of quasi-static states of soft robots. 
-    The LM soft strain sensors with wireless fPCB boards enable the on-body intelligence of soft robots. With the data stream from those sensors, 
-    trained PINNs can reconstruct the deformed shapes of the target soft robots in a real-time manner (inference time < 0.3 ms) with an MNDE < 6% 
-    in experimental demonstrations, including multimodal deformation, local motion, and random external interactions. "
+  summary: ""
 
 - title: "Model-Based 3D Shape Reconstruction of Soft Robots via Distributed Strain Sensing"
   url: "https://www.liebertpub.com/doi/abs/10.1089/soro.2024.0158"
