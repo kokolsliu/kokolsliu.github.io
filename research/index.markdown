@@ -7,7 +7,7 @@ permalink: /research/
 # Research
 
 <div class="pub-list">
-{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign pubs = site.data.publications %}
 {% for p in pubs %}
   <div class="pub">
     <div class="pub-media">

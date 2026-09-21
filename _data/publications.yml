@@ -1,6 +1,6 @@
-- title: "Physics-Informed Neural Networks for Proprioception of Soft Robots via Wireless Local Strain Sensing"
+- title: "Physics-informed real-time proprioception of soft robots from sparse, wireless strain sensing"
   authors: "Liu, L., Gong, J., Dou, Y., Trivedi, V. M., Chen, L.Y., Li, Y., ... & Zhao, H."
-  venue: "In preparation" 
+  venue: "Under review"
   year: 2026
   image: "/assets/pubs//PINN.png"
   summary: ""
@@ -16,6 +16,22 @@
             with large stretchability and low hysteresis, which can be easily attached to soft robot surfaces for accurate local strain measurements. These measurements 
             are fed into an optimization algorithm with embedded mechanical constraints. Our approach can predict all deformation modes in a soft bar with a maximum displacement 
             error of less than 4% of the bar length and accurately reconstruct the shapes of soft pneumatic grippers during grasping actions."
+
+- title: "Serotonin Measurement by Lab-on-a–Contact Lens in Porcine and Human Tears"
+  url: "https://www.science.org/doi/abs/10.1126/scitranslmed.adv9538"
+  authors: "Kim, M., Lee, S. W., Zhang, C., Zeng, W., Liu, L., ... & Zhu, Y."
+  venue: "Science Translational Medicine, 18(867)"
+  year: 2026
+  image: "/assets/pubs/Serotonin-contact-lens.png"
+  summary: "We present a reversible lab-on-a–contact lens platform that integrates a printable, stretchable ferrocene-based electrochemical sensor for in situ serotonin detection in tears. The platform detects serotonin across 0.1 to 500 nanomolar with a 72-picomolar limit of detection, remains functional for more than 28 days and under repeated deformation, and is electrochemically refreshable between measurements. Ocular safety was demonstrated in a porcine eye model, and studies in chronically stressed mice and a first-in-human pilot support tear serotonin as a noninvasive marker related to stress."
+
+- title: "In Vivo Untethered Neural Recording in Freely Behaving Octopuses"
+  url: "https://www.cell.com/device/abstract/S2666-9986(25)00360-6"
+  authors: "Seo, J., Hwaun, E., Jung, S., Jeong, H., Cao, Y., Liu, L., ... & Zhao, H."
+  venue: "Device, 4(3)"
+  year: 2026
+  image: "/assets/pubs/Octopus-neural-recording.jpg"
+  summary: "We present a fully implantable, untethered neural recording system for freely behaving octopuses. The platform combines a flexible multichannel probe targeting the vertical and subvertical lobes with foldable electronics for high-resolution recording, onboard data storage, and wireless configuration. Recordings reveal 2–10 Hz local field potential oscillations that diminish under anesthetized or tethered conditions, offering a general strategy for implantable bioelectronics in soft-bodied animal models."
 
 - title: "Highly stretchable and customizable microneedle electrode arrays for intramuscular electromyography"
   url: "https://doi.org/10.1126/sciadv.adn7202"
