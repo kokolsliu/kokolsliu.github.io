@@ -13,8 +13,8 @@ title: Home
     </h1>
     <p class="subtitle">Ph.D. Candidate · Soft robotics · Computational Mechanics</p>
     <div class="statement">
-        I am a fourth-year Ph.D. Candidate in Mechanical Engineering at USC. My research focuses on bridging physics-based modeling and data-driven perception for soft robotic systems.
-        I also work in numerical simulation of complex and multiphycis systems, as well as structural optimization of compliant mechanisms. 
+        I am a Ph.D. Candidate in Mechanical Engineering at USC. My research focuses on bridging physics-based modeling and data-driven perception for soft robotic systems. My doctoral research is driven by a central question: how can soft, deformable machines sense, reconstruct, and predict the motion of their own continuously deforming bodies?  By combining continuum mechanics, reduced-order modelling, distributed sensing and emerging AI techniques, my work focuses on making high-dimensional deformable systems observable without dense sensing via physics-informed machine intelligence.
+        I also help my collaborators in numerical simulation of complex and multiphycis systems. My ealier research also covers inverse design of mechanical metamaterials as well as structural optimization of compliant mechanisms and structures for vibration mitigation.
         In personal life, I am a portrait photographer, feel free to connect me on soical medias.
     </div>
 
@@ -43,9 +43,11 @@ title: Home
   <b>Focus</b><br/>
   <span style="color:#666;">
     <ul>
-        <li>Proprioceptive reconstruction of soft robotic systems</li>
+        <li>Proprioceptive reconstruction and predictive modelling of soft robotic systems</li>
         <li>Physics-informed scientific learning for continuum mechanics</li>
         <li>Computational structural analysis and topology optimization</li>
+        <li>Mechanical metamaterials</li>
+        <li>Vibration and impact mitigation</li>
     </ul>
   </span>
 </div>
@@ -57,4 +59,3 @@ title: Home
     <li>Teaching Assistant: AME524 Classical Mechanics for Scientists and Engineers</li>
   </ul>
 </div>
-
