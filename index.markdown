@@ -4,26 +4,23 @@ title: Home
 ---
 
 <div class="hero">
+  <h1>
+    Liangshu (koko) Liu ·
+    <span class="cn-name">刘梁枢</span>
+  </h1>
+  <p class="subtitle">Ph.D. Candidate · Soft robotics · Computational Mechanics</p>
 
-  <div class="hero-text">
-
-    <h1>
-      Liangshu (koko) Liu · 
-      <span class="cn-name">刘梁枢</span>
-    </h1>
-    <p class="subtitle">Ph.D. Candidate · Soft robotics · Computational Mechanics</p>
-    <div class="statement">
-        I am a Ph.D. Candidate in Mechanical Engineering at USC. My research focuses on bridging physics-based modeling and data-driven perception for soft robotic systems. My doctoral research is driven by a central question: how can soft, deformable machines sense, reconstruct, and predict the motion of their own continuously deforming bodies?  By combining continuum mechanics, reduced-order modelling, distributed sensing and emerging AI techniques, my work focuses on making high-dimensional deformable systems observable without dense sensing via physics-informed machine intelligence.
-        I also help my collaborators in numerical simulation of complex and multiphycis systems. My ealier research also covers inverse design of mechanical metamaterials as well as structural optimization of compliant mechanisms and structures for vibration mitigation.
-        In personal life, I am a portrait photographer, feel free to connect me on soical medias.
+  <div class="statement">
+    <div class="hero-photo">
+      <img src="/assets/profile.jpg" alt="Profile Photo">
     </div>
 
-  </div>
+    <p>I am a Ph.D. Candidate in Mechanical Engineering at USC. My research focuses on bridging physics-based modeling and data-driven perception for soft robotic systems. My doctoral research is driven by a central question: how can soft, deformable machines sense, reconstruct, and predict the motion of their own continuously deforming bodies? By combining continuum mechanics, reduced-order modelling, distributed sensing and emerging AI techniques, my work focuses on making high-dimensional deformable systems observable without dense sensing via physics-informed machine intelligence.</p>
 
-  <div class="hero-photo">
-    <img src="/assets/profile.jpg" alt="Profile Photo">
-  </div>
+    <p>I also help my collaborators in numerical simulation of complex and multiphycis systems. My ealier research also covers inverse design of mechanical metamaterials as well as structural optimization of compliant mechanisms and structures for vibration mitigation.</p>
 
+    <p>In personal life, I am a portrait photographer, feel free to connect me on soical medias.</p>
+  </div>
 </div>
 
 

@@ -99,17 +99,7 @@ a:hover { text-decoration: underline; }
 
 /* Hero layout */
 .hero{
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 40px;
-  align-items: start;
   margin-top: 20px;
-}
-
-.hero-photo img{
-  width: 100%;
-  border-radius: 14px;
-  border: 1px solid var(--line);
 }
 
 .subtitle{
@@ -126,9 +116,48 @@ a:hover { text-decoration: underline; }
   line-height: 1.7;
 }
 
+.statement::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.statement p{
+  margin: 0 0 1em;
+  color: inherit;
+  text-align: justify;
+  text-justify: inter-word;
+  text-wrap: pretty;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.statement p:last-child{
+  margin-bottom: 0;
+}
+
+.hero-photo{
+  float: right;
+  width: 320px;
+  margin: 0 0 20px 32px;
+}
+
+.hero-photo img{
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  display: block;
+}
+
 @media (max-width: 900px){
-  .hero{
-    grid-template-columns: 1fr;
+  .hero-photo{
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .statement p{
+    text-align: left;
   }
 }
 
@@ -299,4 +328,3 @@ a:hover { text-decoration: underline; }
   color: #000;           /* 灰色 */
   margin-left: 4px;
 }
-
