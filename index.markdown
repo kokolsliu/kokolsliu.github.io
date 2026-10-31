@@ -53,6 +53,6 @@ title: Home
   <b>Service</b>
   <ul>
     <li>Reviewer: International Journal of Applied Mechanics, Sensors and Actuators A: Physical, International Journal of Mechanical Sciences, Engineering with Computers.</li>
-    <li>Teaching Assistant: AME524 Classical Mechanics for Scientists and Engineers, AME451 Linear Control Systems I</li>
+    <li>Teaching Assistant: AME524 Advanced Engineering Dynamics, AME451 Linear Control Systems I</li>
   </ul>
 </div>
