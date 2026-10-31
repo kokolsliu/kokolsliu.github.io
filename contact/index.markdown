@@ -23,12 +23,12 @@ permalink: /contact/
     </svg>
   </a>
 
-  <!-- Instagram -->
-  <a class="contact-icon" href="https://www.instagram.com/koko.lsliu" target="_blank" aria-label="Instagram">
+  <!-- Google Scholar -->
+  <a class="contact-icon" href="https://scholar.google.com/citations?user=9d-ySmAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar">
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-      <circle cx="12" cy="12" r="4"></circle>
-      <circle cx="17" cy="7" r="1"></circle>
+      <path d="M2 9l10-5 10 5-10 5z"></path>
+      <path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"></path>
+      <path d="M22 9v6"></path>
     </svg>
   </a>
 
