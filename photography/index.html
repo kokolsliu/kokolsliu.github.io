@@ -6,7 +6,20 @@ permalink: /photography/
 
 <h1>Photography</h1>
 
-<div id="masonry" class="masonry">
+<form id="photo-gate" class="photo-gate" autocomplete="off">
+  <p>This gallery is password protected.</p>
+  <div class="photo-gate-row">
+    <input id="photo-gate-input" type="password" placeholder="Password" aria-label="Password" required>
+    <button type="submit">Enter</button>
+  </div>
+  <p class="photo-gate-hint">Hint: my girlfriend's name</p>
+  <p id="photo-gate-error" class="photo-gate-error" hidden>Incorrect password.</p>
+</form>
+
+<div id="masonry" class="masonry" hidden></div>
+
+<!-- Gallery markup lives in a template so no photos load until unlocked. -->
+<template id="masonry-template">
   {% assign imgs = site.static_files | where_exp: "f", "f.path contains '/assets/photos/'" %}
   {% for img in imgs %}
     {% assign ext = img.extname | downcase %}
@@ -16,23 +29,53 @@ permalink: /photography/
       </a>
     {% endif %}
   {% endfor %}
-</div>
+</template>
 
 <script>
-  // Shuffle items to get a random dense layout each load (client-side).
   (function () {
+    // SHA-256 of the password (input is trimmed and lowercased before hashing).
+    const HASH = "56e1239485139d3d0564c10a8cb8e7dbb6c75b2d744d49073d07c4208f7b7941";
+    const KEY = "photography-unlocked";
+
+    const form = document.getElementById("photo-gate");
+    const input = document.getElementById("photo-gate-input");
+    const error = document.getElementById("photo-gate-error");
     const container = document.getElementById("masonry");
-    if (!container) return;
+    const tpl = document.getElementById("masonry-template");
 
-    const items = Array.from(container.children);
+    function showGallery() {
+      container.appendChild(tpl.content.cloneNode(true));
 
-    // Fisher–Yates shuffle
-    for (let i = items.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [items[i], items[j]] = [items[j], items[i]];
+      // Shuffle items to get a random dense layout each load (Fisher–Yates).
+      const items = Array.from(container.children);
+      for (let i = items.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [items[i], items[j]] = [items[j], items[i]];
+      }
+      items.forEach(el => container.appendChild(el));
+
+      form.hidden = true;
+      container.hidden = false;
     }
 
-    // Re-append shuffled items
-    items.forEach(el => container.appendChild(el));
+    async function sha256(text) {
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, "0")).join("");
+    }
+
+    try {
+      if (sessionStorage.getItem(KEY) === "1") { showGallery(); return; }
+    } catch (e) {}
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      if (await sha256(input.value.trim().toLowerCase()) === HASH) {
+        try { sessionStorage.setItem(KEY, "1"); } catch (e) {}
+        showGallery();
+      } else {
+        error.hidden = false;
+        input.select();
+      }
+    });
   })();
 </script>

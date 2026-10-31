@@ -320,6 +320,58 @@ a:hover { text-decoration: underline; }
   .masonry{ column-count: 1; }
 }
 
+/* Photography password gate */
+.photo-gate{
+  max-width: 360px;
+  margin-top: 18px;
+}
+
+.photo-gate-row{
+  display: flex;
+  gap: 8px;
+}
+
+.photo-gate input{
+  flex: 1;
+  min-width: 0;
+  padding: 9px 12px;
+  font: inherit;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  outline: none;
+}
+
+.photo-gate input:focus{
+  border-color: #cfcfcf;
+}
+
+.photo-gate button{
+  padding: 9px 16px;
+  font: inherit;
+  color: var(--fg);
+  background: #fafafa;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.photo-gate button:hover{
+  border-color: #cfcfcf;
+}
+
+.photo-gate .photo-gate-hint{
+  font-size: 0.9em;
+  margin: 10px 0 0;
+}
+
+.photo-gate .photo-gate-error{
+  color: #b00020;
+  font-size: 0.9em;
+  margin: 6px 0 0;
+}
+
 
 .cn-name{
   font-family: "Noto Serif SC", serif;
